@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Repository.Model;
 
 namespace Repository
 {
-    using Repository.Model;
 
-    interface IRepository
+    public interface IRepository
     {
         /// <summary>
         /// Fetches collection of InjectionContainer
