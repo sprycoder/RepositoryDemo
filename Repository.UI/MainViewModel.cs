@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
+using Repository.Model;
 
 using RepositoryDemo.Annotations;
 
@@ -13,19 +14,19 @@ namespace RepositoryDemo
 
     public class MainViewModel : INotifyPropertyChanged
     {
-        List<Container> _containers = new List<Container>();
+        List<InjectionContainer> _containers = new List<InjectionContainer>();
 
         public MainViewModel()
         {
-            this._containers = new List<Container>
+            this._containers = new List<InjectionContainer>
                                    {
-                                       new Container
+                                       new InjectionContainer
                                            {
                                                Name = "Unity",
                                                Company = "Microsoft",
-                                               Description = "The Unity Container (Unity) is a lightweight, extensible dependency injection container with optional support for instance and type interception."
+                                               Description = "The Unity InjectionContainer (Unity) is a lightweight, extensible dependency injection container with optional support for instance and type interception."
                                            },
-                                        new Container
+                                        new InjectionContainer
                                            {
                                                Name = "AutoFac",
                                                Company = "MIT",
@@ -34,7 +35,7 @@ namespace RepositoryDemo
                                    };
         }
 
-        public List<Container> Containers
+        public List<InjectionContainer> InjectionContainers
         {
             get { return this._containers; }
             set

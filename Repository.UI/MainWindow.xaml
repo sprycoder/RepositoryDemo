@@ -5,17 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RepositoryDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="650">
     <Grid>
 
-        <ListView ItemsSource="{Binding Containers}">
+        <ListView ItemsSource="{Binding InjectionContainers}">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <StackPanel Orientation="Vertical">
-                        <TextBlock Text="{Binding Name}" FontWeight="Bold"></TextBlock>
-                        <TextBlock Text="{Binding Company}"></TextBlock>
-                        <TextBlock Text="{Binding Description}"></TextBlock>
-                    </StackPanel>
+                    <Border Width="600px" BorderBrush="BlueViolet" BorderThickness="2" Padding="15px">
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Text="{Binding Name}" FontWeight="Bold"></TextBlock>
+                            <TextBlock Text="{Binding Company}"></TextBlock>
+                            <TextBlock Text="{Binding Description}" TextWrapping="Wrap"></TextBlock>
+                        </StackPanel>
+                    </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
