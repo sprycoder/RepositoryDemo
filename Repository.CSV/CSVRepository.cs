@@ -3,6 +3,7 @@
     using System.Collections.Generic;
     using System.IO;
 
+    using Repository.Core;
     using Repository.Model;
 
     /// <summary>

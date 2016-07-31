@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Repository.Model;
 
-namespace Repository
+namespace Repository.Core
 {
 
     public interface IRepository

@@ -98,11 +98,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Repositories\Repository\Repository.csproj">
+    <ProjectReference Include="..\Repository.Core\Repository.Core.csproj">
       <Project>{48583d20-9f5e-4ec7-9115-45e8244c82c9}</Project>
-      <Name>Repository</Name>
+      <Name>Repository.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Repository.Model\Repository.Model\Repository.Model.csproj">
+    <ProjectReference Include="..\Repository.Model\Repository.Model.csproj">
       <Project>{4060d03a-b4b8-4b36-a764-58e45754b5ce}</Project>
       <Name>Repository.Model</Name>
     </ProjectReference>

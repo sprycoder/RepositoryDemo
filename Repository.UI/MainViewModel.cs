@@ -18,23 +18,8 @@ namespace RepositoryDemo
 
         public MainViewModel()
         {
-            var repo = Repository.RepositoryProvider.GetRepository();
+            var repo = Repository.Core.RepositoryProvider.GetRepository();
             this._containers = repo.GetContainers().ToList();
-            //new List<InjectionContainer>
-            //                   {
-            //                       new InjectionContainer
-            //                           {
-            //                               Name = "Unity",
-            //                               Author = "Microsoft",
-            //                               Description = "The Unity InjectionContainer (Unity) is a lightweight, extensible dependency injection container with optional support for instance and type interception."
-            //                           },
-            //                        new InjectionContainer
-            //                           {
-            //                               Name = "AutoFac",
-            //                               Author = "MIT",
-            //                               Description = "Autofac is an IoC container for Microsoft .NET. It manages the dependencies between classes so that applications stay easy to change as they grow in size and complexity. This is achieved by treating regular .NET classes as components."
-            //                           }
-            //                   };
         }
 
         public List<InjectionContainer> InjectionContainers

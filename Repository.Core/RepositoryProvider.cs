@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 
-namespace Repository
+namespace Repository.Core
 {
 
     public static class RepositoryProvider
